@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body{
+    background-color: rgb(58, 56, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 600px;
+    height:min-content;
+    background-image: linear-gradient(165deg,#00feba,#696293);
+    border-radius: 20px;
+    padding: 28px;
+}
+.search-box{
+    width: 100%;
+    /* height: min-content; */
+    display: flex;
+    justify-content: space-between;
+
+}
+.input-box{
+    background-color: #e6f5fb;
+    width: 84%;
+    font-size: 20px;
+    color: black;
+    padding: 12px 16px;
+    border-radius: 14px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.input-box::placeholder{
+    color: black;
+}
+button{
+    width: 46px;
+    height: 46px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #e6f5fb;
+}
+button:hover{
+    color: white;
+    background-color: gray;
+}
+.weather-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.weather-body img{
+    width: 60%;
+   
+}
+.weather-box{
+    margin-block:20px ;
+    text-align: center;
+}
+.weather-box .temperature{
+        font-weight: 800;
+        font-size: 60px;
+        position: relative;
+}
+.weather-box .temperature sup{
+    position: absolute;
+    font-size: 40px;
+}
+.weather-box .description{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    
+}
+.weather-detail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 35px;
+}
+.humidity {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+#humidity p{
+    font-weight: bold;
+}
+.wind-speed{
+    display: flex;
+    align-items: center;
+}
+.weather-detail i{
+    font-size: 35px;
+    /* margin-top: 80px; */
+}
+.text{
+    margin-left: 20px;
+    font-size: 40px;
+}
+.text span {
+    font-weight: 600;
+}
+
+.not-found{
+    margin-top: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.not-found h1{
+    font-size: 30px;
+    margin-block-end:15px ;
+}
+.not-found img{
+    width: 50%;
+}
